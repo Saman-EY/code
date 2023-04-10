@@ -1,0 +1,15 @@
+.SubContainer {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 1024px) {
+  .SubContainer {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    padding: 2rem;
+  }
+}

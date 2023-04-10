@@ -1,0 +1,34 @@
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/YekanBakh/YekanBakh-Medium/YekanBakh-Medium.eot),
+    url(../fonts/YekanBakh/YekanBakh-Medium/YekanBakh-Medium.ttf),
+    url(../fonts/YekanBakh/YekanBakh-Medium/YekanBakh-Medium.ttf),
+    url(../fonts/YekanBakh/YekanBakh-Medium/YekanBakh-Medium.woff);
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/YekanBakh/YekanBakh-Bold/YekanBakh-Bold.eot),
+    url(../fonts/YekanBakh/YekanBakh-Bold/YekanBakh-Bold.ttf),
+    url(../fonts/YekanBakh/YekanBakh-Bold/YekanBakh-Bold.woff);
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/YekanBakh/YekanBakh-Heavy/YekanBakh-Heavy.eot),
+    url(../fonts/YekanBakh/YekanBakh-Heavy/YekanBakh-Heavy.ttf),
+    url(../fonts/YekanBakh/YekanBakh-Heavy/YekanBakh-Heavy.woff);
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.eot),
+    url(../fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.ttf),
+    url(../fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.woff);
+}

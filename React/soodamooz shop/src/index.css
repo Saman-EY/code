@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: iransans;
+  src: url(./assets/fonts/woff2/IRANSansWeb.woff2),
+    url(./assets/fonts/woff/IRANSansWeb.woff);
+}
+
+@font-face {
+  font-family: iransans;
+  font-weight: 300;
+  src: url(./assets/fonts/woff2/IRANSansWeb_Light.woff2),
+    url(./assets/fonts/woff/IRANSansWeb_Light.woff);
+}
+
+@font-face {
+  font-family: iransans;
+  font-weight: 500;
+  src: url(./assets/fonts/woff2/IRANSansWeb_Medium.woff2),
+    url(./assets/fonts/woff/IRANSansWeb_Medium.woff);
+}
+
+@font-face {
+  font-family: iransans;
+  font-weight: 800;
+  src: url(./assets/fonts/woff2/IRANSansWeb_Bold.woff2),
+    url(./assets/fonts/woff/IRANSansWeb_Bold.woff);
+}
+
+@layer base {
+  body {
+    font-family: iransans, Arial, Helvetica, sans-serif;
+    @apply bg-[#00173D];
+  }
+}
+
+@layer components {
+  .NavStyle {
+    @apply bg-primary text-white px-7 z-30 sticky top-0;
+  }
+
+  .NavLink {
+    @apply text-textColor-2 flexCenter gap-2 text-xs relative;
+  }
+
+  .flexCenter {
+    @apply flex items-center;
+  }
+
+  /* buttons  */
+  .Goldbtn {
+    @apply p-2 px-6 text-xs flexCenter gap-2 border border-[#FFB703] text-[#FFB703] border-opacity-80 rounded-lg;
+  }
+
+  .login-registerBtn {
+    @apply text-textColor-1 flexCenter gap-2 p-2 pl-3 border border-[#ACB2B8] border-opacity-40 rounded-lg;
+  }
+
+  .BasketBtn {
+    @apply bg-transparent py-3 px-6 border border-[#5473FF] text-[#5473FF] rounded-lg;
+  }
+}
+
+.BackdropImg {
+  background: rgb(0, 110, 226);
+  background: radial-gradient(
+    circle,
+    rgba(0, 110, 226, 1) 0%,
+    rgba(0, 23, 61, 1) 41%
+  );
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.Line {
+  background-image: url('../src/assets/images/Artboard\ 6\ copy.svg');
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+}
+
+.NavLink::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 1.7px;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+
+.NavLink:hover::after {
+  transform: scaleX(1);
+}
+
+/* slider navgation  */
+.swiper-button-next {
+  background-image: url(./assets/icon/arrow-slider.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  border: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* button effects */
+.Goldbtn,
+.login-registerBtn,
+.BasketBtn {
+  background-image: linear-gradient();
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  transition: background-size 0.3s, color 0.3s;
+}
+
+.Goldbtn:hover,
+.login-registerBtn:hover,
+.BasketBtn:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.Goldbtn {
+  background-image: linear-gradient(#ffb703, #ffb703);
+}
+
+.login-registerBtn {
+  background-image: linear-gradient(#acb2b8, #acb2b8);
+}
+
+.BasketBtn {
+  background-image: linear-gradient(#5473ff, #5473ff);
+}

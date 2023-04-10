@@ -1,0 +1,50 @@
+.container {
+  box-shadow: rgba(182, 183, 184, 0.5) 0px 8px 20px;
+  background-color: rgba(90, 90, 90, 0.46);
+  color: rgb(209, 209, 209);
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 15px;
+}
+
+.image {
+  width: 300px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.detail {
+  font-size: 0.85rem;
+  color: rgb(144, 144, 144);
+  margin: 5px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 5px;
+}
+
+.price {
+  background-color: #30ccff;
+  color: black;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.location {
+  display: flex;
+  align-items: flex-end;
+}
+
+.location p {
+  margin-right: 5px;
+}

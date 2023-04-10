@@ -1,0 +1,47 @@
+.Maincontainer {
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boxcontainer {
+    padding: 2rem 3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgb(188, 185, 185);
+}
+
+.Boxcontainer h3 {
+    color: rgb(138, 138, 138);
+}
+
+.Boxcontainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .4rem;
+    border-radius: 6px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.Boxcontainer button:hover {
+   background-color: rgb(2, 73, 2);
+}
+
+.Boxcontainer button:focus {
+    box-shadow: 0px 0px 10px rgb(5, 189, 5);
+    /* -webkit-tap-highlight-color: transparent; */
+}
+
+.Boxcontainer button img {
+    width: 35px;
+}

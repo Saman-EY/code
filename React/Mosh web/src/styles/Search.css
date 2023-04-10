@@ -1,0 +1,103 @@
+.SearchSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.SearchSection h3 {
+  color: var(--header);
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.SearchSection p {
+  color: var(--gray);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+.SearchDiv {
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 40px rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.SearchDiv input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+.SearchDiv input::placeholder {
+  font-size: 1.3rem;
+  color: var(--lightgray);
+}
+
+.SearchDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 14px 10px;
+  border-radius: 30px;
+  border: 0;
+  background-color: var(--tomato);
+  color: white;
+  cursor: pointer;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.SearchDiv button:hover {
+  background-color: var(--tomatoHover);
+}
+
+.SearchDiv button img {
+  margin-top: 2px;
+  width: 25px;
+}
+
+.SearchSection ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.SearchSection ul li {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--header);
+}
+
+.SearchSection ul li:first-child {
+  color: white;
+  background-color: var(--lightblue);
+  border-radius: 20px;
+  padding: 3px 18px 7px;
+}
+
+@media (min-width: 768px) {
+  .SearchSection ul {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+}

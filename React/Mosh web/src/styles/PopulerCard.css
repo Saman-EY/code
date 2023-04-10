@@ -1,0 +1,48 @@
+.PopularCardContainer {
+    box-shadow: 0 0 39px rgb(231, 231, 231);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
+.PopularCardContainer:hover {
+    transform: scale(1.17);
+}
+
+.PopularCardHeader {
+    background-color: var(--blue);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: relative;
+}
+
+.PopularCardHeader > span, .PopularCardHeader > p  {
+    color: white;
+}
+
+.PopularCardHeader > div :last-child {
+    background-color: blue;
+}
+
+.PopularBadge {
+    background-color: var(--header);
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 30px;
+    height: 60px;
+    clip-path: polygon(100% 100%, 100% 0, 0 0, 0% 99%, 48% 66%);
+    
+}
+
+@media (max-width: 1024px) {
+    .PopularCardContainer {
+        max-width: 400px;
+        transform: scale(1);
+      }
+}

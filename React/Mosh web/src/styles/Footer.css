@@ -1,0 +1,162 @@
+.Footer {
+  background-color: var(--black);
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FooterSection {
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+  padding: 8rem 0 4rem;
+}
+
+.footer-logo {
+  margin-right: 2rem;
+}
+
+.footer-logo p {
+  color: var(--gray);
+  max-width: 220px;
+  text-align: center;
+}
+
+.uls-section {
+  display: flex;
+  gap: 6rem;
+}
+
+.ul-footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-footer > div > img {
+  display: none;
+  transition: all linear .2s;
+  cursor: pointer;
+}
+
+.ul-footer h5 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.ul-footer li {
+  list-style: none;
+}
+
+.ul-footer li a {
+  text-decoration: none;
+  color: var(--lightgray);
+  transition: all ease .2s;
+}
+
+.ul-footer li a:hover {
+  color: var(--gray);
+}
+
+.ul-footer-li {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  max-height: 20vh;
+  /* max-height: 100%; */
+  transition: all linear .3s;
+}
+
+
+
+.rotate-90 {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 768px) {
+
+  .Footer {
+    display: block;
+  }
+
+  .FooterSection {
+    flex-direction: column-reverse;
+  }
+
+
+  .uls-section {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0;
+  }
+
+  .ul-footer {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(60, 60, 60);
+  }
+
+  .ul-footer > div > img {
+    display: block;
+    width: 40px;
+  }
+
+  .ul-footer h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .ul-footer li a {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+    margin-top: 3rem;
+    text-align: center;
+
+  }
+
+
+  .footer-logo p {
+    color: var(--gray);
+    max-width: none;
+    font-size: 1.4rem;
+  }
+
+  .LiCollapse {
+    /* max-height: 0vh; */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .uls-section {
+    gap: 3rem;
+  }
+
+}

@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'iransansMed';
+  src: url(./assets/iransans/woff/IRANSansWeb_Medium.woff),
+    url(./assets/iransans/woff2/IRANSansWeb_Medium.woff2);
+}
+
+@font-face {
+  font-family: 'iransansBold';
+  src: url(./assets/iransans/woff/IRANSansWeb_Bold.woff),
+    url(./assets/iransans/woff2/IRANSansWeb_Bold.woff2);
+}
+
+@font-face {
+  font-family: 'iransansLight';
+  src: url(./assets/iransans/woff/IRANSansWeb_Light.woff),
+    url(./assets/iransans/woff2/IRANSansWeb_Light.woff2);
+}
+
+@layer base {
+  html {
+    font-family: 'iransansLight';
+    box-sizing: border-box;
+  }
+
+  select {
+    background-position: left;
+  }
+}
+
+@layer components {
+  .FlexCenter {
+    @apply flex items-center;
+  }
+
+  .NavDropdown {
+    @apply flex items-center gap-1 cursor-pointer font-semibold text-xs lg:text-sm whitespace-nowrap border-b border-transparent py-3  transition-all ease-in hover:border-primary;
+  }
+
+  .NavLink {
+    @apply font-semibold text-xs lg:text-sm whitespace-nowrap border-b border-transparent pb-3 hover:border-primary py-3 transition-all ease-in;
+  }
+
+  .NavDropdownLinks {
+    @apply border-2 bg-Blackprimary rounded-md divide-y absolute top-[80px] -right-4 w-56 invisible opacity-0  transition-all duration-300  group-hover:visible group-hover:opacity-100 group-hover:top-[50px] flex flex-col overflow-hidden;
+  }
+
+  .DashboardLinks {
+    @apply flex items-center p-2 text-sm font-normal rounded-lg text-white hover:bg-gray-100 hover:text-gray-600 transition-all;
+  }
+}
+
+.LandingSearchSec {
+  background-image: url(./assets/images/home-search-2.png);
+  background-size: cover;
+  background-position: center;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CategoryTitle {
+  background: rgb(0, 124, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 124, 255, 1) 0%,
+    rgba(0, 34, 91, 1) 41%
+  );
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 16px;
+  color: white;
+}
+
+.DashboardTopbar {
+  background: rgb(0, 88, 190);
+  background: radial-gradient(
+    circle,
+    rgba(0, 88, 190, 1) 0%,
+    rgba(0, 34, 91, 1) 100%
+  );
+  height: 50px;
+}
+
+.RegisterUl li::before {
+  content: '';
+  background-image: url(./assets/icons/angles-left-solid.svg);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+@media (max-width: 770px) {
+  .LandingSearchSec {
+    height: 250px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 640px) {
+  #aside {
+    width: 200px;
+  }
+}
+
+@media (min-width: 640px) {
+  #aside {
+    width: 300px;
+  }
+}

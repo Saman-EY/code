@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgb(195, 193, 193);
+    color: white;
+}
+
+.container img {
+    width: 40px;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 220px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.symbol {
+    width: 100px;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.price {
+    width: 90px;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.redPriceChange, .greenPriceChange {
+    margin: 0 2rem 0rem 2rem;
+    font-weight: bold;
+}
+
+.redPriceChange {
+    color: red;
+}
+
+.greenPriceChange {
+    color: green;
+}
+
+.marketCap {
+    text-align: right;
+    width: 160px;
+}

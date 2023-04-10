@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+    /* backgroundColor: 'lightblue',
+    height: '20rem',
+    width: '80rem',
+    margin: '4rem 2rem',
+    background: 'rgb(189,189,189)',
+    background:
+      'radial-gradient(circle, rgba(189,189,189,1) 0%, rgba(9,9,9,1) 92%)',
+    borderRadius: '.5rem',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center" */
+
+    background-color: lightblue;
+    height: 20rem;
+    width: 80rem;
+    margin: 4rem 2rem;
+    background: rgb(189,189,189);
+    background: radial-gradient(circle, rgba(189,189,189,1) 0%, rgba(9,9,9,1) 92%);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

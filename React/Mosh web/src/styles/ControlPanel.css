@@ -1,0 +1,81 @@
+.ControlPanel {
+  background-color: var(--black);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+  margin-bottom: 7rem;
+  color: white;
+  padding-bottom: 8rem;
+  padding-top: 4rem;
+}
+
+.ControlPanel > h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.ControlPanelContainer {
+    display: flex;
+    gap: 1rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.ControlPanelContainer > img {
+    width: 100%;
+    max-width: 700px;
+}
+
+.CPanelBenefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.CPanelBenefits li {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.CPanelBenefits li img {
+    width: 40px;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.CPDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CPDescription h3 {
+    font-size: 1.5rem;
+}
+
+.CPDescription p {
+    font-size: 1.25rem;
+    color: var(--gray);
+    max-width: 550px;
+}
+
+
+@media (max-width: 768px) {
+    .ControlPanelContainer {
+        flex-direction: column;
+    }
+
+    .CPanelBenefits {
+        padding: 0 1.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ControlPanelContainer > img {
+        max-width: 500px;
+        /* height: fit-content; */
+        margin: auto;
+    }
+}

@@ -1,0 +1,194 @@
+header {
+  background-color: var(--black);
+  clip-path: polygon(100% 0%, 0% 0%, 0% 99%, 100% 93%);
+}
+.HeaderSection {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* CONTAINER */
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.NavContainer .LogoContainer {
+  width: 140px;
+}
+
+.NavContainer img {
+  width: 100%;
+}
+
+.NavContainer .MenuIcon {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 8px 12px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.NavContainer .MenuIcon.active {
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 5px 3px white;
+}
+
+/* Links  */
+.NavLinks {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  width: 100%;
+  flex-direction: column;
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.NavLinks.NavCollapse {
+  height: 0vh;
+  opacity: 0;
+  padding-top: 0;
+}
+
+.NavLinks a {
+  color: lightgray;
+  text-decoration: none;
+  width: 100%;
+  transition: all ease 0.3s;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgb(75, 75, 75);
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.NavLinks a:hover {
+  color: white;
+}
+
+/* HEADER CONTAINER  */
+.HeaderContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.HeaderDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.HeaderDescription h2 {
+  color: white;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+
+.HeaderDescription p {
+  color: var(--lightgray);
+  font-size: 1.3rem;
+  word-spacing: 0.15rem;
+  padding: 0 1rem;
+}
+
+.HeaderDescription button {
+  background-color: var(--tomato);
+  color: white;
+  padding: 17px 60px;
+  border-radius: 100px;
+  width: fit-content;
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.HeaderDescription button:hover {
+  background-color: var(--tomatoHover);
+  transition: all ease-out 0.3s;
+}
+
+.Banner {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+@media (min-width: 768px) {
+  /* nav  */
+  .NavContainer .MenuIcon {
+    display: none;
+  }
+
+  .NavContainer {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+
+  .NavLinks,
+  .NavLinks.NavCollapse {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    flex-direction: row;
+    padding-top: 0;
+    margin-bottom: 0.4rem;
+    gap: 2rem;
+  }
+
+  .NavLinks a {
+    width: auto;
+    border: 0;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  /* Header container  */
+  .HeaderContent {
+    flex-direction: row;
+  }
+
+  .HeaderDescription {
+    margin: auto;
+    text-align: start;
+    padding: 1rem;
+  }
+
+  .HeaderDescription button {
+    margin: 0;
+  }
+
+  .Banner {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .NavContainer {
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .HeaderDescription h2 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .Banner {
+    max-width: 500px;
+  }
+}
